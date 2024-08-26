@@ -211,7 +211,6 @@ color: #0A224A;
 position: relative;
 display: inline-block;
 transition: transform 0.3s ease 0.3s ease;
-padding-left: 40px;
 }
 
 .service::before {
@@ -226,12 +225,13 @@ transition: width 0.3s ease;
 }
 
 .service:hover {
-    transform: translateX(40px); 
+transform: translateX(40px); 
+padding-left: 40px;
 }
 
 .service:hover::before {
-    width: 30px;
-    height: 2px;
+width: 30px;
+height: 2px;
 }
 
 .service-and-price p {
