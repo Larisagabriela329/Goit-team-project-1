@@ -1,0 +1,225 @@
+/* About us section */
+
+.about-container {
+    min-width: 375px;
+}
+
+
+.about-text-container {
+padding: 64px 16px 64px 16px;
+gap: 8px;
+background: #F7FAFF;
+
+}
+
+.about-subtitle-line {
+    display: inline;
+    vertical-align: middle;
+    margin-right: 20px;
+}
+
+.about-section-subtitle {
+font-family: Roboto;
+font-size: 16px;
+font-weight: 400;
+line-height: 24px;
+text-align: left;
+color: #0A224A;
+}
+
+.about-title {
+font-family: Roboto;
+font-size: 28px;
+font-weight: 400;
+line-height: 42px;
+text-align: left;
+color: #0A224A;
+}
+
+.about-paragraph {
+font-family: Roboto;
+font-size: 16px;
+font-weight: 400;
+line-height: 24px;
+text-align: left;
+color: #0A224A;
+}
+
+.reasons-container {
+width: 170px;
+margin: 30px 102px 64px 103px;
+}
+
+.about-reasons {
+list-style-type: none;
+padding: 0;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}
+
+.reason {
+text-align: center;
+width: 170px;
+}
+
+
+.reason-title {
+font-family: Roboto;
+font-size: 50px;
+font-weight: 400;
+line-height: 75px;
+text-align: center;
+color: #0A224A;
+}
+
+.reason-paragraph {
+font-family: Roboto;
+font-size: 16px;
+font-weight: 400;
+line-height: 24px;
+text-align: center;
+color: #0A224A;
+}
+
+.about-image-container {
+min-width: 375px;
+height: auto;
+}
+
+.about-image-container img {
+height: 100%;
+width: 100%;
+object-fit: fill;
+}
+
+
+@media (min-width:768px) {
+    .about-container {
+        min-width: 704px;
+        margin: 100px 32px 100px 32px;
+    }
+
+    .about-text-container {
+        padding: 36px 64px 36px 64px;
+        margin-bottom: 30px;
+    }
+
+    .about-title {   
+       font-size: 32px;
+       line-height: 45px;
+    }
+
+    .about-paragraph {
+       font-size: 18px;
+       line-height: 27px;
+    }
+
+    .reasons-container {
+        width: 576px;
+        margin: auto;
+    }
+
+    .about-reasons {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .reason-paragraph {
+        font-size: 18px;
+        line-height: 27px;
+    }
+
+    .about-image-container {
+        min-width: 704px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .about-container {
+        min-width: 1320px;
+        display: flex;
+        gap: 24px;
+        margin: 100px 60px 100px 60px;
+    }
+
+    .about-text-container {
+       margin-bottom: 0px;
+    }
+
+    .about-image-container {
+        min-width: 536px;
+    }
+}
+
+/* Prices section */
+.prices-container {
+min-width: 343px;
+height: 408px;
+margin: 64px 16px 64px 16px;
+}
+
+.prices-list {
+list-style-type: none;
+padding: 0;
+}
+
+.service-and-price {
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+align-items: center;
+}
+
+.service-and-price h3 {
+font-family: Roboto;
+font-size: 28px;
+font-weight: 400;
+line-height: 42px;
+text-align: left;
+color: #0A224A;
+}
+
+.service-and-price p {
+font-family: Roboto;
+font-size: 16px;
+font-weight: 700;
+line-height: 24px;
+text-align: right;
+vertical-align: middle;
+color: #0A224A;
+}
+
+.prices-line {
+width: 100%;
+height: 0px;
+border: 1px solid #0A224A
+}
+
+@media (min-width: 768px) {
+    .prices-container {
+        min-width: 704px;
+        height: 420px;
+        margin: 100px 32px 100px 32px;
+    }
+
+    .service-and-price h3 {
+        font-size: 32px;
+        line-height: 45px;
+    }
+
+    .service-and-price p {
+        font-size: 18px;
+        line-height: 27px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .prices-container {
+        width: 1096px;
+        margin: 100px 172px 100px 172px;
+        padding: 0px;
+    }
+}
