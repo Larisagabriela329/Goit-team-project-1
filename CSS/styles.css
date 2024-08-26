@@ -25,6 +25,17 @@ font-weight: 400;
 line-height: 24px;
 text-align: left;
 color: #0A224A;
+display: flex;
+flex-wrap: wrap;
+align-items: center;
+}
+
+.about-section-subtitle::before {
+content: "";
+width: 30px;
+height: 1px;
+background-color: #0A224A;
+margin-right: 20px;
 }
 
 .about-title {
@@ -156,6 +167,20 @@ object-fit: fill;
 }
 
 /* Prices section */
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
 .prices-container {
 min-width: 343px;
 height: 408px;
@@ -172,15 +197,41 @@ display: flex;
 flex-wrap: wrap;
 justify-content: space-between;
 align-items: center;
+position: relative;
+overflow: hidden;
 }
 
-.service-and-price h3 {
+.service {
 font-family: Roboto;
 font-size: 28px;
 font-weight: 400;
 line-height: 42px;
 text-align: left;
 color: #0A224A;
+position: relative;
+display: inline-block;
+transition: transform 0.3s ease, color 0.3s ease;
+padding-left: 40px;
+}
+
+.service::before {
+    content: "";
+    position: absolute;
+    height: 0px;
+    width: 0;
+    bottom: 50%;
+    left: 0;
+    background-color: #0A224A;
+    transition: width 0.3s ease;
+}
+
+.service:hover {
+    transform: translateX(40px); 
+}
+
+.service:hover::before {
+    width: 30px;
+    height: 2px;
 }
 
 .service-and-price p {
