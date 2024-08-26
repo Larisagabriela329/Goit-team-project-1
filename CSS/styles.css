@@ -210,19 +210,19 @@ text-align: left;
 color: #0A224A;
 position: relative;
 display: inline-block;
-transition: transform 0.3s ease, color 0.3s ease;
+transition: transform 0.3s ease 0.3s ease;
 padding-left: 40px;
 }
 
 .service::before {
-    content: "";
-    position: absolute;
-    height: 0px;
-    width: 0;
-    bottom: 50%;
-    left: 0;
-    background-color: #0A224A;
-    transition: width 0.3s ease;
+content: "";
+position: absolute;
+height: 0px;
+width: 0;
+bottom: 50%;
+left: 0;
+background-color: #0A224A;
+transition: width 0.3s ease;
 }
 
 .service:hover {
