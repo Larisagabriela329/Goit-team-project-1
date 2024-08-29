@@ -57,7 +57,7 @@ color: #0A224A;
 
 .reasons-container {
 width: 170px;
-margin: 30px 102px 0px 103px;
+margin: auto;
 }
 
 .about-reasons {
@@ -129,7 +129,6 @@ object-fit: fill;
 
     .reasons-container {
         width: 576px;
-        margin: auto;
     }
 
     .about-reasons {
