@@ -1,7 +1,7 @@
 /* About us section */
 
 .about-container {
-    min-width: 375px;
+    min-width: 320px;
 }
 
 
@@ -95,7 +95,7 @@ color: #0A224A;
 }
 
 .about-image-container {
-min-width: 375px;
+min-width: 320px;
 height: auto;
 }
 
@@ -180,8 +180,13 @@ object-fit: fill;
 }
 
 .prices-container {
-min-width: 343px;
-margin: 64px 16px 64px 16px;
+min-width: 320px;
+}
+
+@media (min-width: 375px) {
+    .prices-container {
+        margin: 64px 16px 64px 16px;
+        }
 }
 
 .prices-list {
